@@ -13,44 +13,9 @@ export default sidebar({
       children: "structure",
     },
   ],
-  "/interesting/": [
-    {
-      text: "好玩的",
-      collapsible: false,
-      children: "structure",
-    },
-  ],
-  "/java/": [
-    {
-      text: "Java",
-      collapsible: false,
-      children: "structure",
-    },
-  ],
-  "/ai/": [
-    {
-      text: "人工智能",
-      collapsible: false,
-      children: "structure",
-    },
-  ],
-  "/database/": [
-    {
-      text: "数据",
-      collapsible: false,
-      children: "structure",
-    },
-  ],
   "/life/": [
     {
       text: "生活",
-      collapsible: false,
-      children: "structure",
-    },
-  ],
-  "/kubernetes/": [
-    {
-      text: "Kubernetes",
       collapsible: false,
       children: "structure",
     },
