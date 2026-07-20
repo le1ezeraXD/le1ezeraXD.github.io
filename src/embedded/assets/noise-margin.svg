@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+  <title id="title">数字输入电平区间</title>
+  <desc id="desc">VIL 以下为逻辑零，VIH 以上为逻辑一，中间为不确定区。</desc>
+  <rect width="900" height="360" rx="24" fill="#f7f9fc"/>
+  <text x="450" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#27364b">数字输入电平区间</text>
+  <rect x="120" y="96" width="660" height="70" rx="12" fill="#3d8bfd"/>
+  <rect x="120" y="166" width="660" height="70" fill="#f2b84b"/>
+  <rect x="120" y="236" width="660" height="70" rx="12" fill="#4dbb82"/>
+  <text x="450" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#fff">逻辑 1（可靠高电平）</text>
+  <text x="450" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#543b08">不确定区</text>
+  <text x="450" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#fff">逻辑 0（可靠低电平）</text>
+  <line x1="90" y1="166" x2="810" y2="166" stroke="#27364b" stroke-width="2"/>
+  <line x1="90" y1="236" x2="810" y2="236" stroke="#27364b" stroke-width="2"/>
+  <text x="820" y="174" font-family="Arial, sans-serif" font-size="18" fill="#27364b">VIH(min)</text>
+  <text x="820" y="244" font-family="Arial, sans-serif" font-size="18" fill="#27364b">VIL(max)</text>
+</svg>

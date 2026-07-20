@@ -6,6 +6,13 @@ export default sidebar({
   "/article/": false,
   "/star/": false,
   "/timeline/": false,
+  "/embedded/": [
+    {
+      text: "嵌入式",
+      collapsible: false,
+      children: "structure",
+    },
+  ],
   "/interesting/": [
     {
       text: "好玩的",
