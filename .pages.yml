@@ -1,0 +1,86 @@
+media:
+  - name: life_images
+    label: 日记图片
+    input: src/.vuepress/public/images/life
+    output: /images/life
+    rename: safe
+    extensions:
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+    categories:
+      - image
+
+content:
+  - name: life
+    label: 生活日记
+    type: collection
+    path: src/life
+    format: yaml-frontmatter
+    exclude:
+      - README.md
+    subfolders: false
+    filename: "{year}-{month}-{day}-{title}.md"
+    view:
+      fields:
+        - title
+        - date
+        - tag
+      primary: title
+      sort:
+        - date
+        - title
+      search:
+        - title
+        - body
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: 标题
+        type: string
+        required: true
+        options:
+          maxlength: 120
+      - name: date
+        label: 日期
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: category
+        label: 分类
+        type: string
+        list: true
+        hidden: true
+        default:
+          - 生活
+      - name: tag
+        label: 标签
+        type: string
+        list: true
+        required: false
+        description: 可填写多个标签，例如日记、旅行、读书。
+      - name: body
+        label: 正文
+        type: rich-text
+        required: true
+        options:
+          format: markdown
+          switcher: true
+          media: life_images
+          rename: safe
+
+settings:
+  content:
+    merge: true
+  commit:
+    identity: user
+    templates:
+      create: "Publish diary: {filename}"
+      update: "Update diary: {filename}"
+      delete: "Delete diary: {filename}"
+      rename: "Rename diary: {oldFilename} -> {newFilename}"
