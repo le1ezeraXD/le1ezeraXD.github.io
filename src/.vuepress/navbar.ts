@@ -5,6 +5,10 @@ export default navbar([
   { text: "嵌入式", link: "/embedded/" },
   { text: "生活", link: "/life/" },
   { text: "系统设计", link: "/system-design/" },
+  {
+    text: "写文章",
+    link: "https://github.com/le1ezeraXD/le1ezeraXD.github.io/new/main/src/life",
+  },
   { text: "赞赏", link: "/donate/" },
   {
     text: "网站相关",
